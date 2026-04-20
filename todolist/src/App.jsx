@@ -85,7 +85,7 @@ function App() {
       <div className="fixed w-full bottom-6  ">
         <div className="md:container  rounded-xl my-3 mx-3  p-4 bg-orange-100 min-h-[80vh] md:w-1/3 border-orange-800 border-2  " >
           <h1 className='font-bold text-center text-xl'>LIST</h1>
-          <div className="addtodo my-5 flex flex-col gap-4">
+          <div className="addtodo my-5 flex flex-col gap-4 ">
             <h2 className='text-lg font-bold'>INSERT TASK</h2>
             <div className="flex">
               <input onChange={handleChange} value={todo} className='bg-white w-full rounded-full px-5 py-1' type="text" />
@@ -93,7 +93,7 @@ function App() {
             </div>
           </div>
           <input onChange={togglefinished} className='mx-2 ' type="checkbox" checked={showfinished} id="show" />
-          <label className='mx-2' htmlFor="show">Show Finished</label>
+          <label className='mx-2' htmlFor="">Show Finished</label>
           <hr className="h-px w-2/4bg-black opacity-15 w-[90%] mx-auto my-3" />
           <h2 className='text-lg font-bold m'>MY LIST</h2>
           <div className="todos content-between">
